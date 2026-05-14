@@ -1,0 +1,84 @@
+.card {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+  transition: box-shadow var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card);
+}
+
+.iconWrap {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.red {
+  background: var(--color-stat-red-bg);
+  color: var(--color-stat-red-icon);
+}
+
+.teal {
+  background: var(--color-stat-teal-bg);
+  color: var(--color-stat-teal-icon);
+}
+
+.green {
+  background: var(--color-stat-green-bg);
+  color: var(--color-stat-green-icon);
+}
+
+.purple {
+  background: var(--color-stat-purple-bg);
+  color: var(--color-stat-purple-icon);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .iconWrap {
+    width: 36px;
+    height: 36px;
+  }
+
+  .value {
+    font-size: 16px;
+  }
+}
