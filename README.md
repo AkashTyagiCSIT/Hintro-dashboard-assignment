@@ -10,6 +10,9 @@ npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173).
+## Live Demo
+
+🔗 [View Project](https://hintro-dashboard-assignment.vercel.app/)
 
 ## Tech Stack
 
